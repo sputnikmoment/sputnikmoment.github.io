@@ -1,0 +1,54 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Sputnik Moment
+email: sptnkmmnt@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Иван Антонович Ефремов: "Смерть страшна и заставляет цепляться за жизнь лишь тогда, когда жизнь прошла в бесплодном и тоскливом ожидании непрожитых радостей." (цитата из романа "Туманность Андромеды")
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  sputnikmoment
+twitter_username: sptnkmmnt
+instagram_username: sptnkmmnt
+vk.com_username: sptnkmmnt
+
+excerpt_separator: <!--more-->
+
+# Jekyll-paginate configuration
+#  pagination:
+#   enabled: true
+#   per_page: 5
+#   permalink: '/page/:num/'
+#   title: ':title - page :num of :max'
+#   limit: 0
+#   sort_field: 'date'
+#   sort_reverse: true
+
+# jekyll-paginate configuration
+paginate:            5
+
+# Build settings
+markdown: kramdown
+theme: minima
+highlighter:         rouge
+permalink:           none
+
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+
+  
+
