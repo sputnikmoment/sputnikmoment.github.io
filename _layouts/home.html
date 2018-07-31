@@ -1,0 +1,65 @@
+﻿---
+layout: default
+---
+
+<div class="home">
+<style type="text/css">
+   .space { 
+    background: #F2EFE6;
+    border: 1px solid #B25538;
+    padding: 10px;
+    margin: 20px;
+    text-align: justify;
+   }
+ A.link1 {
+    font-size: 28px; 
+    font-weight: bold; 
+    color: red; 
+   }
+  </style>
+ </head>
+ <body>
+  <div class="space">
+<p><p class="text-justify">
+Всем доброго времени суток! Мое имя неважно, неважны мои анкетные данные. Не важно что вы думаете о себе или об этом месте. Только верная информация имеет значение.<br> Страница еще в процессе разработки, ее исходный код  <a href="https://github.com/sputnikmoment/sputnikmoment.github.io/"> открыт по адресу.</a><br>Подробнее об этом месте можно прочитать <a href="https://sputnikmoment.github.io/about/"> по этой ссылке.</a></p></p>
+</div>
+
+<img src="http://sputnikmoment.ru/images/imga.png"/>
+<br>
+<br>
+ <h1 class="page-heading">Свежие заметки:</h1>
+  
+  {{ content }}
+
+  <ul class="post-list">
+{% for post in site.posts %}
+  <li>
+    <p class="space"> &nbsp;&nbsp;<b><a href="{{ post.url }}"class="link1">{{ post.title }}</a></b><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span> <i class="fa fa-calendar" aria-hidden="true"></i>{{ post.date | date_to_string }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span> </br> </br>
+    {{ post.content | strip_html | truncate: 350 }} <a href="{{ site.github.url }}{{ post.url }}">Читать далее</a>
+  </li>
+{% endfor %}
+  </ul>
+
+
+ <div class="space">
+  <p class="rss-subscribe">Подписаться на это безобразие <a href="{{ "/feed.xml" | relative_url }}">через RSS</a></p>
+</div>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-button pagination-active" href="{{ site.github.url }}{{ paginator.next_page_path }}" class="next">{{ site.data.settings.pagination.previous_page }}</a>
+  {% else %}
+    <span class="pagination-button">{{ site.data.settings.pagination.previous_page }}</span>
+  {% endif %} 
+
+  {% if paginator.previous_page %}
+    <a class="pagination-button pagination-active" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">{{ site.data.settings.pagination.next_page }}</a>
+  {% else %}
+    <span class="pagination-button">{{ site.data.settings.pagination.next_page }}</span>
+  {% endif %}
+</div>
+
+</div>
+
+

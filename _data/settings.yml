@@ -1,0 +1,27 @@
+﻿# Change to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: 'sputnikmoment'
+
+google-ID: '_______________'
+
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+social:
+- {icon: 'twitter', link: 'https://twitter.com/@sptnkmmnt'}
+- {icon: 'mastodon', link: 'https://mastodon.social/@sptnkmmnt'}
+- {icon: 'vk', link: 'https://vk.com/sptnkmmnt'}
+- {icon: 'instagram', link: 'http://instagram.com/sptnkmmnt'}
+- {icon: 'rss-square', link: '/feed.xml'}
+# - {icon: 'rss-square', link: '/rss-feed.xml'}
+
+# Customize site text
+pagination:
+  next_page: 'Вперед'
+  previous_page: 'Назад'
+
+sharing_button_prompt: 'Не забудьте поделиться этой заметкой в социальных сетях!'
+
+related_posts: 'Так же Вас могут заинтересовать следующие заметки:'
+
+post_date_prefix: 'Написано'
