@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+﻿# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
@@ -14,16 +14,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Sputnik Moment
-email: sptnkmmnt@gmail.com
+email: sptnkmmnt@protonmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Иван Антонович Ефремов: "Смерть страшна и заставляет цепляться за жизнь лишь тогда, когда жизнь прошла в бесплодном и тоскливом ожидании непрожитых радостей." (цитата из романа "Туманность Андромеды")
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  sputnikmoment
-twitter_username: sptnkmmnt
-instagram_username: sptnkmmnt
-vk.com_username: sptnkmmnt
+github_username:  
+twitter_username: 
+instagram_username: 
+vk.com_username: 
 
 excerpt_separator: <!--more-->
 
