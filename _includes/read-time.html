@@ -1,0 +1,21 @@
+{% if post.layout != post %}
+  {% assign words = post.content | strip_html | number_of_words %}
+  {% if words < 180 %}
+    время чтения - меньше минуты
+  {% elsif words < 360 %}
+    время чтения - минута
+  {% else %}
+    {{ words | divided_by:180 }} минут на чтение
+  {% endif %}
+{% endif %}
+
+{% if post.layout == post %}
+  {% assign words = content | number_of_words %}
+  {% if words < 180 %}
+    время чтения - меньше минуты
+  {% elsif words < 360 %}
+    время чтения - минута
+  {% else %}
+    {{ words | divided_by:180 }} minute read
+  {% endif %}
+{% endif %}
