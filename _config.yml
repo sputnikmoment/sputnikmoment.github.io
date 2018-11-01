@@ -1,54 +1,21 @@
-﻿# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Sputnik Moment
-email: sptnkmmnt@protonmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Иван Антонович Ефремов: "Смерть страшна и заставляет цепляться за жизнь лишь тогда, когда жизнь прошла в бесплодном и тоскливом ожидании непрожитых радостей." (цитата из романа "Туманность Андромеды")
-
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  
-twitter_username: 
-instagram_username: 
-vk.com_username: 
-
-excerpt_separator: <!--more-->
-
-# Jekyll-paginate configuration
-#  pagination:
-#   enabled: true
-#   per_page: 5
-#   permalink: '/page/:num/'
-#   title: ':title - page :num of :max'
-#   limit: 0
-#   sort_field: 'date'
-#   sort_reverse: true
-
-# jekyll-paginate configuration
-paginate:            5
+title: "sptnkmmnt - репозитарий текстов"
+description: "Sputnik Moment text repository"
+baseurl: "" # required if used under gh-pages branch, else (under master branch) just leave empty/blank
+url: "http://sputnikmoment.ru"
+author: "sptnkmmnt"
 
 # Build settings
-markdown: kramdown
-theme: minima
-highlighter:         rouge
-permalink:           none
+kramdown:
+  input: GFM
+permalink: pretty
 
-gems:
-  - jekyll-feed
-  - jekyll-paginate
+# Third-party services
+# just leave empty to disable it
+google_analytics: UA-87081507-1
+disqus_shortname: sputnikmoment 
 
-  
+plugins:
+  - jekyll-sitemap
 
+exclude: ["LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script"]

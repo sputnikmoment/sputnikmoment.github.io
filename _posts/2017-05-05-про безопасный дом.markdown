@@ -4,9 +4,12 @@ title: Про безопасный дом
 date: '2017-05-05 21:50:01 +0300'
 categories: заметки
 published: true
-tags: [пост, заметка]
-image: savehouse.jpg
+comment: true
+tags: [Дневник]
 ---
+
+![Сейф]( /image/savehouse.jpg)
+
 
 Люди — всего лишь люди. Потому ждать от них иного достаточно бессмысленно.
 

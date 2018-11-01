@@ -1,20 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-  {% include head.html %}
-
+<html>
+  {% include head.html %} 
   <body>
-
-    {% include header.html %}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+    <div class="page-content">
+      {{ content }}
+      <div class="copyright">
+        <p>&copy; {{ site.time | date: '%Y' }} <a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}"><strong>{{ site.title }}</strong></a> ― Создано с помощью <a href="https://jekyllrb.com/">Jekyll</a> и <a href="https://github.com/heiswayi/textlog">Textlog theme</a></p>
       </div>
-    </main>
-
-    {% include footer.html %}
-{% include google-analytics.html %}
-</body>
-
+    </div>
+    {% include google_analytics.html %}
+  </body>
 </html>
