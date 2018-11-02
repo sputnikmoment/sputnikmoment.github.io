@@ -8,7 +8,7 @@ author: "sptnkmmnt"
 # Build settings
 kramdown:
   input: GFM
-permalink: /:title:output_ext
+permalink: pretty
 
 # Third-party services
 # just leave empty to disable it
