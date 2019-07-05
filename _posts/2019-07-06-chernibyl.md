@@ -2,7 +2,7 @@
 layout: post
 title: Чернобыль: сколько стоит халтура
 tags: [Публицистика]
-date: '2019-07-06 09:00:01 +0300'
+date: '2019-07-05 09:00:01 +0300'
 comment: true
 ---
 ![Чорнобуль]( /image/cher/chernobil.jpg)
