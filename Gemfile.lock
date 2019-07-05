@@ -56,8 +56,6 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (2.0.0)
       listen (~> 3.0)
-    jekyll-youtube (1.0.0)
-      jekyll
     kramdown (1.17.0)
     liquid (4.0.0)
     listen (3.1.5)
@@ -67,7 +65,7 @@ GEM
     mercenary (0.3.6)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
-    nokogiri (1.8.4)
+    nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     parallel (1.12.1)
     pathutil (0.16.1)
@@ -101,7 +99,6 @@ DEPENDENCIES
   bundler (~> 1.15)
   html-proofer
   jekyll-sitemap
-  jekyll-youtube
   rake (~> 12.0)
   textlog!
   tzinfo
