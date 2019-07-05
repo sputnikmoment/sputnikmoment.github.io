@@ -1,5 +1,5 @@
 # Site settings
-title: "sptnkmmnt - репозитарий текстов"
+title: "sptnkmmnt - хранилище текстов"
 description: "Sputnik Moment text repository"
 baseurl: "" # required if used under gh-pages branch, else (under master branch) just leave empty/blank
 url: "http://sputnikmoment.ru"
