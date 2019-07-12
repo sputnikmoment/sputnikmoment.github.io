@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: post
 title: Что делать, если на Вас подали в суд?
+comment: false
 ---
+![Текст поста]( /sample/i/suditsa.png)
 
 Что делать, если на Вас подали в суд?
 ⠀
