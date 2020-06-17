@@ -1,0 +1,11 @@
+- name: Внедрение в тему
+  percentage: 95
+  color: info
+
+- name: Индивидуальный подход
+  percentage: 90
+  color: success
+  
+- name: Чувство слова
+  percentage: 90
+  color: success

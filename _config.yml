@@ -1,21 +1,95 @@
-# Site settings
-title: "sptnkmmnt - хранилище текстов"
-description: "Sputnik Moment text repository"
-baseurl: "" # required if used under gh-pages branch, else (under master branch) just leave empty/blank
-url: "http://sputnikmoment.ru"
-author: "sptnkmmnt"
+### Site Settings ###
+title               : Нужный копирайтер
+description         : >-
+                      Привет, меня зовут Алексей,
+                      здесь я ставлю слова на место 
+                      и помогаю людям распространять информацию.
+baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : sputnikmoment/sputnikmoment.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+remote_theme        : YoussefRaafatNasry/portfolYOU
 
-# Build settings
-kramdown:
-  input: GFM
-permalink: /:title:output_ext
 
-# Third-party services
-# just leave empty to disable it
-google_analytics: UA-87081507-1
-disqus_shortname: sputnikmoment 
-
+### Plugins ###
 plugins:
-  - jekyll-sitemap
+  - jemoji
 
-exclude: ["LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script"]
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+  - documentation/partials/**                           # For Documentation Only
+
+
+### Author Info ###
+author:
+  name              : Алексей Мицкевич
+  image             : http://sputnikmoment.ru/image/me.jpg
+# behance           : your_username
+# dribbble          : your_username
+  email             : sptnk.pr@yandex.ru
+# facebook          : your_username
+# github            : sputnikmoment
+# gitlab            : your_username
+  instagram         : sptkmmnt
+# kaggle            : your_username
+# linkedin          : your_username
+# medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow      : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+  twitter           : sptnkmmnt
+  vk                : your_username
+# youtube           : your_channel_name
+
+
+### Posts ###
+permalink: /blog/:title
+
+### Analytics ###
+analytics:
+  enabled: true
+  google:
+    tracking_id: UA-87081507-1
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+  elements:                                             # For Documentation Only
+    output: true                                        # For Documentation Only
+
+
+### Disqus ###
+disqus: sputnikmoment                          # Your website Shortname on disqus
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:                                              # For Documentation Only
+      path: ""                                          # For Documentation Only
+      type: "elements"                                  # For Documentation Only
+    values:                                             # For Documentation Only
+      layout: "element"                                 # For Documentation Only
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true                                   # Set to true to enable disqus comments
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"

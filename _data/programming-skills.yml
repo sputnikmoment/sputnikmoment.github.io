@@ -1,0 +1,11 @@
+- name: Рекламные тексты
+  percentage: 95
+  color: danger
+
+- name: Статьи на заданную тему
+  percentage: 90
+  color:
+
+- name: Аналитика на заданную тему
+  percentage: 85
+  color: dark
